@@ -1,0 +1,15 @@
+ami_id                    = "ami-0f8ca728008ff5af4"
+instance_type             = "t2.micro"
+tag                       = "server_terraform"
+key_name                  = "Key-tf"
+ports                     = [80, 443, 22]
+SG_tag                    = "Security_Group_Test"
+SG_name                   = "SG_tf"
+AG_name                   = "AS_Group"
+policy_name               = "Policy for Autoscaling Group"
+min_size                  = 1
+max_size                  = 3
+desired_capacity          = 2
+health_check_grace_period = 300
+health_check_type         = "EC2"
+cooldown                  = "300"
